@@ -1,0 +1,294 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+#so {
+    display: none;
+}
+
+.logo {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    top: 50px;
+    left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.logo span {
+    font-style: italic;
+    font-family: cursive;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.nav>ul {
+    list-style: none;
+    float: right;
+    margin: 20px 60px;
+}
+
+.nav>ul>li {
+    padding: 5px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.nav>ul>li:hover {
+    border-bottom: 2px solid rgb(140, 167, 240);
+    cursor: pointer;
+}
+
+.nav>ul>li:hover a {
+    text-shadow: 0px 0px 20px white;
+    color: white;
+}
+
+.nav>ul>li>a {
+    text-decoration: none;
+    color: rgb(125, 228, 217);
+    font-size: 25px;
+}
+
+.imagebg {
+    width: 820px;
+    height: 630px;
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+}
+
+.titlecontant {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-45%);
+    width: 620px;
+    height: 300px;
+    color: white;
+    padding: 5px;
+}
+
+.title {
+    font-size: 50px;
+    color: aqua;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1px solid white;
+}
+
+#littletext {
+    font-size: 27px;
+    color: aqua;
+    font-weight: bold;
+}
+
+.para {
+    font-size: 20px;
+    text-align: justify;
+    margin: 30px 20px;
+}
+
+
+/* second section css apply here */
+
+.secondsection {
+    width: 100%;
+    height: auto;
+    background-color: rgb(167, 250, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 1px;
+}
+
+.secondtitle {
+    width: auto;
+    padding: 5px 20px;
+    font-size: 50px;
+    font-weight: bold;
+    border-bottom: 4px solid black;
+}
+
+.child {
+    width: 95%;
+    height: 500px;
+    margin: 50px 0px;
+    /* border: 2px solid black; */
+}
+
+.childbox {
+    width: 100%;
+    height: 100%;
+    border: 5px solid aqua;
+    clip-path: polygon(58% 0%, 82% 100%, 0 100%, 0 0);
+    background-color: rgb(232, 243, 243);
+    padding: 3%;
+    overflow: hidden;
+}
+
+.childbox.a {
+    transform: rotateY(-180deg);
+}
+
+.childimages.a {
+    left: 3%;
+    background: url("images/tesla-1738969_1920.jpg") center;
+    background-size: cover;
+}
+
+.childimages.d {
+    background: url("images/digitel\ markiting.jpg") center;
+    background-size: cover;
+    left: 3%;
+}
+
+.childimages.c {
+    background: url("images/jarvis.jpg") center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    color: rgb(149, 221, 78);
+    text-shadow: 0px 0px 50px white;
+}
+
+.childimages {
+    width: 50%;
+    height: 400px;
+    background: url("images/mane.jpg") center;
+    background-size: cover;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-top: 50px;
+    position: absolute;
+    right: 3%;
+    z-index: 10;
+}
+
+.secondnamehed {
+    font-size: 40px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.seondpara.b {
+    transform: rotateY(180deg);
+    margin-top: 0px;
+}
+
+.seondpara {
+    width: 43%;
+    height: auto;
+    font-size: 22px;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+
+/* code of mobile look */
+
+@media (max-width: 800px) {
+    .home {
+        padding: 0;
+    }
+    .logo {
+        top: 4%;
+        left: 5%;
+        font-size: 43px;
+    }
+    #nivg {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+    .nav {
+        width: 600px;
+        height: 700px;
+        border-radius: 50%;
+        background-color: tomato;
+        transform: translate(-100%, -60%);
+        position: absolute;
+        z-index: 99;
+        transition: all .5s;
+    }
+    .nav>ul {
+        margin-top: 40%;
+    }
+    .nav>ul>li {
+        display: block;
+        padding: 5px 10px;
+    }
+    .nav>ul>li>a {
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .nav>ul>li:hover {
+        border: none;
+    }
+    #so:checked~.nav {
+        transform: translate(-50%, -30%);
+        transition: all .4s;
+    }
+    .imagebg {
+        width: 100%;
+        height: 60%;
+        left: -140px;
+        bottom: 0;
+    }
+    .titlecontant {
+        top: 300px;
+        width: 90%;
+    }
+    .title {
+        font-size: 27px;
+        margin-left: -25px;
+    }
+    #littletext {
+        font-size: 23px;
+    }
+    .para {
+        margin-left: 20%;
+        font-size: 15px;
+    }
+    /* second section css apply here for mobile */
+    .secondtitle {
+        font-size: 22px;
+        border: none;
+    }
+    .secondnamehed {
+        font-size: 21px;
+    }
+    .seondpara {
+        font-size: 15px;
+    }
+    .child {
+        height: 350px;
+    }
+    .childimages {
+        height: 250px;
+    }
+}
