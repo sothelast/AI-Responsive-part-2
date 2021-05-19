@@ -151,18 +151,18 @@
 
 .childimages.a {
     left: 3%;
-    background: url("images/tesla-1738969_1920.jpg") center;
+    background: url("tesla-1738969_1920.jpg") center;
     background-size: cover;
 }
 
 .childimages.d {
-    background: url("images/digitel\ markiting.jpg") center;
+    background: url("digitel\ markiting.jpg") center;
     background-size: cover;
     left: 3%;
 }
 
 .childimages.c {
-    background: url("images/jarvis.jpg") center;
+    background: url("jarvis.jpg") center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -175,7 +175,7 @@
 .childimages {
     width: 50%;
     height: 400px;
-    background: url("images/mane.jpg") center;
+    background: url("mane.jpg") center;
     background-size: cover;
     border-radius: 20px;
     border: 1px solid black;
